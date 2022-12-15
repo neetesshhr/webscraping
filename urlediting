@@ -1,0 +1,29 @@
+https://www.booking.com/
+searchresults.html?
+label=gen173nr-1FCAEoggI46AdIM1gEaKsBiAEBmAExuAEZyAEM2AEB6AEB-AECiAIBqAIDuAKlx9GcBsACAdICJDgyMGVjNzAzLWYwMTYtNDk1MS1iNzRjLWZkNWRlODBkNTNkM9gCBeACAQ&sid=
+0028b15b49df734dca79ba302323cc98&sb=1&sb_lp=1&src=index&src_elem=sb&
+error_url=https%3A%2F%2Fwww.booking.com%2Findex.html%3Flabel%3Dgen173nr-1FCAEoggI46AdIM1gEaKsBiAEBmAExuAEZyAEM2AEB6AEB-AECiAIBqAIDuAKlx9GcBsACAdICJDgyMGVjNzAzLWYwMTYtNDk1MS1iNzRjLWZkNWRlODBkNTNkM9gCBeACAQ%26sid%3D0028b15b49df734dca79ba302323cc98%26sb_price_type%3Dtotal%3Bsrpvid%3D2b174bdbb23b0117%26%26&ss=Kathmandu&is_ski_area=0&ssne=Kathmandu&ssne_untouched=Kathmandu&dest_id=-1022136&dest_type=city&checkin_year=2022&checkin_month=12&checkin_monthday=22&checkout_year=2022&checkout_month=12&checkout_monthday=24&efdco=1&group_adults=2&group_children=0&no_rooms=1&b_h4u_keep_filters=&from_sf=1
+
+
+#search_results_table > div:nth-child(2) > div
+
+#search_results_table > div:nth-child(2) > div > div > div > div.d4924c9e74
+
+#search_results_table > div:nth-child(2) > div > div > div > div.d4924c9e74 > div:nth-child(2) > div.d20f4628d0 > div.b978843432 > div > div.d7449d770c.a081c98c6f > div.e41894cca1 > div > div.fd1924b122.d4741ba240 > span > div
+
+//*[@id="search_results_table"]/div[2]/div/div/div/div[5]/div[1]/div[1]/div[2]/div/div[3]/div[2]/div/div[1]/span/div
+
+<div aria-expanded="false">
+<span class="c5888af24f e729ed5ab6" aria-hidden="true">
+NPR&nbsp;7,899</span><span data-testid="price-and-discounted-price" aria-hidden="true" class="fcab3ed991 fbd1d3018c e729ed5ab6">
+NPR&nbsp;4,739</span><span class="b6dc9a9e69 ab800a8b9d e25355d3ee b8c9de5937" aria-hidden="true">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.25 15.75h-.75a.75.75 0 0 1-.75-.75v-3.75a1.5 1.5 0 0 0-1.5-1.5h-.75a.75.75 0 0 0 0 1.5h.75V15a2.25 2.25 0 0 0 2.25 2.25h.75a.75.75 0 0 0 0-1.5zM11.625 6a1.125 1.125 0 1 0 0 2.25 1.125 1.125 0 0 0 0-2.25.75.75 0 0 0 0 1.5.375.375 0 1 1 0-.75.375.375 0 0 1 0 .75.75.75 0 0 0 0-1.5zM22.5 12c0 5.799-4.701 10.5-10.5 10.5S1.5 17.799 1.5 12 6.201 1.5 12 1.5 22.5 6.201 22.5 12zm1.5 0c0-6.627-5.373-12-12-12S0 5.373 0 12s5.373 12 12 12 12-5.373 12-12z">
+</path></svg></span></div>
+
+#search_results_table > div:nth-child(2) > div > div > div > div.d4924c9e74 > div:nth-child(11) > div.d20f4628d0 > div.b978843432 > div > div.d7449d770c.a081c98c6f > div.e41894cca1 > div > div.fd1924b122.d4741ba240 > span
+
+#search_results_table > div:nth-child(2) > div > div > div > div.d4924c9e74
+
+https://www.booking.com/searchresults.en-gb.html?label=gen173nr-1BCAEoggI46AdIM1gEaFCIAQGYAQm4ARfIAQzYAQHoAQGIAgGoAgO4AqnamocGwAIB0gIkNGEyODNlYTYtYTM2Yi00M2Y3LWE2YjItM2RmYWFlMTM5ZWI22AIF4AIB&sid=44053b754f64b58cfdde1ddc395974a0&sb=1&sb_lp=1&src=index&src_elem=sb&error_url=https%3A%2F%2Fwww.booking.com%2Findex.en-gb.html%3Flabel%3Dgen173nr-1BCAEoggI46AdIM1gEaFCIAQGYAQm4ARfIAQzYAQHoAQGIAgGoAgO4AqnamocGwAIB0gIkNGEyODNlYTYtYTM2Yi00M2Y3LWE2YjItM2RmYWFlMTM5ZWI22AIF4AIB%3Bsid%3D44053b754f64b58cfdde1ddc395974a0%3Bsb_price_type%3Dtotal%26%3B&ss=nepal&is_ski_area=0&checkin_year=2022&checkin_month=12&checkin_monthday=13&checkout_year=2022&checkout_month=12&checkout_monthday=17&group_adults=2&0&no_rooms=1&b_h4u_keep_filters=&from_sf=1&dest_id=&dest_type=&search_pageview_id=1be740bf37ad0063&search_selected=false
+
+https://uk.hotels.com/search.do?destination-id=10233122&q-check-in=2022-12-12&q-check-out=2022-12-15&q-rooms=2&q-room-0-adults=2&q-room-1-adults=2&q-room-0-children=0&q-room-1-children=0&sort-order=BEST_SELLER

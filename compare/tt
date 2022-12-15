@@ -1,0 +1,41 @@
+from selenium import webdriver
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.chrome.service import Service as ChromeService
+from webdriver_manager.chrome import ChromeDriverManager
+import datetime
+from bs4 import BeautifulSoup
+ 
+
+
+options = webdriver.ChromeOptions() 
+
+options.add_argument("start-maximized")
+options.add_experimental_option("excludeSwitches", ["enable-automation"])
+options.add_experimental_option('useAutomationExtension', False)
+driver = webdriver.Chrome(options=options, service=ChromeService(ChromeDriverManager().install()))
+def expedia_price(adult_string, children_string, check_in, check_out, destination, hotel_name):
+    url = "https://www.expedia.co.uk/Hotel-Search?adults={}&children={}&d1={}&d2={}&destination={}&directFlights=false&endDate={}&guestRating=&hotelName={}&localDateFormat=d%2FM%2Fyyyy&partialStay=false&regionId=&semdtl=&sort=RECOMMENDED&startDate={}&theme=&useRewards=false&userIntent=".format(
+            adult_string, children_string, check_in, check_out, destination, check_out, hotel_name, check_in
+        )
+    driver.get(url)
+    soup = BeautifulSoup(driver.page_source, "html.parser")
+    price = soup.find("div", {"class": "uitk-text uitk-type-600 uitk-type-bold uitk-text-emphasis-theme"})
+    price = price.text
+    return price
+
+
+def expedia_content(adult_string, children_string, check_in, check_out, destination, hotel_name):
+    url = "https://www.expedia.co.uk/Hotel-Search?adults={}&children={}&d1={}&d2={}&destination={}&directFlights=false&endDate={}&guestRating=&hotelName={}&localDateFormat=d%2FM%2Fyyyy&partialStay=false&regionId=&semdtl=&sort=RECOMMENDED&startDate={}&theme=&useRewards=false&userIntent=".format(
+            adult_string, children_string, check_in, check_out, destination, check_out, hotel_name, check_in
+        )
+    driver.get(url)
+    soup = BeautifulSoup(driver.page_source, "html.parser")
+    content = soup.find("div", {"class": "uitk-card uitk-card-roundcorner-all uitk-card-has-primary-theme"})
+    return content
+
+# <div class="uitk-text uitk-type-600 uitk-type-bold uitk-text-emphasis-theme">£172</div>
+
+
+# div class="uitk-card uitk-card-roundcorner-all uitk-card-has-primary-theme" 
