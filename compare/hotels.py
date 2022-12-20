@@ -37,4 +37,6 @@ def hotel_content(name, address, rooms, adults_and_children, check_in, check_out
 
 
 # <div class="uitk-text uitk-type-500 uitk-type-bold uitk-text-default-theme">€&nbsp;102</div>
-a = hotel_content("Marriot Hotel", "London", 1, 2, "2022-12-13", "2022-12-17")
+# a = hotel_content("Marriot Hotel", "London", 1, 2, "2022-12-13", "2022-12-17")
+# print(a.text)
+

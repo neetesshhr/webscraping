@@ -18,31 +18,32 @@ def gfg():
         hotel_name = request.form.get("hotel_name")
         rooms = request.form.get("rooms")
         expediaPrice = expedia_price(adult_string, children_string, check_in, check_out, destination, hotel_name)
-        # print("The price for expedia is: {}".format(expediaPrice.text))
+        print("The price for expedia is: {}".format(expediaPrice.text))
         expedia = expediaPrice.text.replace("£","")
-        # print("The replaced price is {}".format(expedia))
+        print("The replaced price is {}".format(expedia))
         # print(type(expediaPrice))
-        bookings= bookings_price(check_in, check_out, destination, adults=adult_string, total_children=children_string, num_rooms=rooms)
+        # bookings= bookings_price(check_in, check_out, destination, adults=adult_string, total_children=children_string, num_rooms=rooms)
         hotels = hotel_price(hotel_name, destination, rooms, adults_and_children, check_in, check_out)
         print("Hotels{}".format(hotels))
         hotels = hotels.text
         
-        bookings = bookings.text
-        print("hotels {}, bookings {}, expedia {} ".format(hotels, bookings,expedia))
+        # bookings = bookings.text
+        print("hotels {},  expedia {} ".format(hotels, expedia))
 
 
-        bookings = ' '.join(bookings.split()[1:])
+        # bookings = ' '.join(bookings.split()[1:])
         hotels = ' '.join(hotels.split()[1:])
 
         expedia = int(expedia)
-        bookings = int(bookings)
+        # bookings = int(bookings)
         hotels = int(hotels)
   
         # best_value = min(expedia, bookings, hotels)
 
         # # if best_value == expedia:
         # #     print("expedia has the best value")
-        # content = expedia_content(adult_string, children_string, check_in, check_out, destination, hotel_name)
+        content = []
+        content.append({"<h1> Expedia </h1>":expedia_content(adult_string, children_string, check_in, check_out, destination, hotel_name), "<br/><h1>Hotels</h1>":hotel_content(hotel_name, destination, rooms, adults_and_children, check_in, check_out)})
         #     # print(e)
     
         # # elif best_value == bookings:
@@ -50,9 +51,11 @@ def gfg():
         # content =  bookings_content(check_in, check_out, destination, adults=adult_string, total_children=children_string, num_rooms=rooms)
         # elif best_value == hotels:
         #     print("hotels are best ")
-        #     content = hotel_content(hotel_name, destination, rooms, adults_and_children, check_in, check_out)
+        # content = hotel_content(hotel_name, destination, rooms, adults_and_children, check_in, check_out)
         #     print(content)
-        # return content
+        contents = '{}'.format(content)
+        contents = contents.replace("[", "")
+        return contents
         
 
     return render_template("form.html")
@@ -60,30 +63,5 @@ def gfg():
 if __name__ == '__main__':
     app.run()
 
-# bookings= bookings_price()
-# hotels = hotel_price()
 
-
-# bookings = ' '.join(bookings.split()[1:])
-# hotels = ' '.join(hotels.split()[1:])
-
-# expedia = int(expedia)
-# bookings = int(bookings)
-# hotels = int(hotels)
-
-# best_value = min(expedia, bookings, hotels)
-
-# if best_value == expedia:
-#     print("expedia has the best value")
-#     e = expedia_content()
-#     print(e)
-    
-# elif best_value == bookings:
-#     print("bookings has best value")
-#     b =  bookings_content()
-#     print(b)
-# elif best_value == hotels:
-#     print("hotels are best ")
-#     h = hotel_content()
-#     print(h)
 
