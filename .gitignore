@@ -7,3 +7,5 @@ _pycache_/
 urlediting
 *.ipynb
 .vscode/
+*.txt
+*.csv
